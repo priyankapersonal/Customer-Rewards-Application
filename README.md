@@ -67,28 +67,40 @@ A Spring Boot application that calculates customer reward points based on transa
 ## 📂 Project Structure
 
 Customer-Rewards-Application
-├── src
-│   └── main
-│       ├── java
-│       │   └── com.infy
-│       │       ├── controller          # REST controllers (RewardsController)
-│       │       ├── dto                 # DTOs for Customer and Transaction
-│       │       ├── model               # JPA entities (Customer, Transaction)
-│       │       ├── repository          # Spring Data JPA repositories
-│       │       ├── service             # Business logic layer
-│       │       └── CustomerRewardsApplication.java  # Main Spring Boot entry point
-│       └── resources
-│           ├── application.properties  # DB config and app settings
-│           └── log4j2.xml              # Log4j2 configuration (if present)
+├── 📁 controller/            → Handles REST API endpoints
+│   └── RewardsController.java
 │
-├── src
-│   └── test
-│       └── java
-│           └── com.infy
-│               └── CustomerRewardApplicationTests.java  # JUnit + Mockito test cases
+├── 📁 dto/                  → Data Transfer Objects for API input/output
+│   ├── CustomerDto.java
+│   └── TransactionDto.java
 │
-├── pom.xml                             # Maven build file
-└── README.md                           # Project documentation
+├── 📁 model/                → JPA Entity classes representing DB tables
+│   ├── Customer.java
+│   └── Transaction.java
+│
+├── 📁 repository/           → Interfaces extending JpaRepository
+│   ├── CustomerRepository.java
+│   └── TransactionRepository.java
+│
+├── 📁 service/              → Business logic & reward point calculations
+│   ├── RewardsService.java
+│   └── RewardsServiceImpl.java (if using interface-impl separation)
+│
+├── 📁 exception/ (optional) → Custom exception handlers (if any)
+│   └── GlobalExceptionHandler.java
+│
+├── 📁 config/     (optional)→ Configuration classes (if needed later)
+│   └── AppConfig.java
+│
+├── CustomerRewardsApplication.java  → Main Spring Boot application class
+│
+├── 📁 test/                → Unit & integration tests
+│   └── CustomerRewardApplicationTests.java
+│
+├── application.properties → Application configuration
+├── log4j2.xml             → Logging configuration (if used)
+└── pom.xml                → Maven build configuration
+
 
 
 ✅ Tests include:
