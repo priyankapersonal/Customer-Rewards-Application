@@ -66,13 +66,30 @@ A Spring Boot application that calculates customer reward points based on transa
 
 ## 📂 Project Structure
 
-com.infy
-├── controller # REST endpoints
-├── dto # Data Transfer Objects (CustomerDto, TransactionDto)
-├── model # JPA Entities (Customer, Transaction)
-├── repository # JPA Repositories
-├── service # Business logic
-└── CustomerRewardsApplication.java
+Customer-Rewards-Application
+├── src
+│   └── main
+│       ├── java
+│       │   └── com.infy
+│       │       ├── controller          # REST controllers (RewardsController)
+│       │       ├── dto                 # DTOs for Customer and Transaction
+│       │       ├── model               # JPA entities (Customer, Transaction)
+│       │       ├── repository          # Spring Data JPA repositories
+│       │       ├── service             # Business logic layer
+│       │       └── CustomerRewardsApplication.java  # Main Spring Boot entry point
+│       └── resources
+│           ├── application.properties  # DB config and app settings
+│           └── log4j2.xml              # Log4j2 configuration (if present)
+│
+├── src
+│   └── test
+│       └── java
+│           └── com.infy
+│               └── CustomerRewardApplicationTests.java  # JUnit + Mockito test cases
+│
+├── pom.xml                             # Maven build file
+└── README.md                           # Project documentation
+
 
 ✅ Tests include:
 1. Positive & negative scenarios for the controller
