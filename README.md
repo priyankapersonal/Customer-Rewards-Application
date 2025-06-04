@@ -65,7 +65,7 @@
 
  📂 Project Structure
 
-        Customer-Rewards-Application
+        CustomerRewardApplication
         ├── src
         │   └── main
         │       ├── java
