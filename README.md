@@ -1,11 +1,11 @@
-# 🎁 Customer Rewards Application
+🎁 Customer Rewards Application
 
-    ## 📝 Overview
+    📝 Overview
     A Spring Boot application that calculates customer reward points based on transaction history.
 
 
 
-## ✅ Features
+✅ Features
 
     - Add new customers along with transaction history
     - Calculate reward points based on configurable business logic
@@ -15,41 +15,41 @@
     - Unit tests using JUnit 5 and Mockito
     - RESTful API design with proper HTTP status handling
 
-## 🏗️ Layers Breakdown
+🏗️ Layers Breakdown
 
-    ### 1. Controller Layer
+     1. Controller Layer
       - Handles HTTP requests/responses  
       - Accepts validated `CustomerDto` and `TransactionDto` via `@RequestBody @Valid`  
       - Routes requests to `RewardsService`
     
-    ### 2. Service Layer
+     2. Service Layer
       - Business logic for saving customers and calculating rewards  
       - Maps DTOs to JPA entities  
       - Delegates data access to the repository layer
     
-    ### 3. Repository Layer
+     3. Repository Layer
       - Uses Spring Data JPA to persist entities  
       - Interface-based approach with `JpaRepository`
     
-    ### 4. Model/Entity Layer
+     4. Model/Entity Layer
       - JPA entities: `Customer` and `Transaction`  
       - Mapped to relational database tables using Hibernate  
       - Relationship:  
         `Customer 1 → ∞ Transaction`
     
-    ### 5. DTO Layer
+     5. DTO Layer
       - `CustomerDto` and `TransactionDto` encapsulate input data  
       - Help decouple internal entity structure from API contracts  
       - Validated using `jakarta.validation` annotations
     
-    ### 6. Validation Layer
+     6. Validation Layer
       - Enforces constraints using annotations like:  
         `@NotNull`, `@NotBlank`, `@Positive`, `@Size`  
       - Validation errors are automatically handled via `@Valid`
 
 
 
-## 🧰 Tech Stack
+ 🧰 Tech Stack
 
     | Layer        | Technology                  |
     |--------------|-----------------------------|
@@ -63,7 +63,7 @@
     | Build Tool   | Maven                       |
 
 
-## 📂 Project Structure
+ 📂 Project Structure
 
         Customer-Rewards-Application
         ├── controller/               → REST Controllers
@@ -121,8 +121,9 @@
         2. The transaction list must have at least one valid transaction
 
 2. 🧮 Calculate Rewards
-    GET /api/rewards/calculateRewards/{customerId}?startDate=2024-01-01&endDate=2024-03-31
-    Returns (JSON):
+        GET /api/rewards/calculateRewards/{customerId}?startDate=2024-01-01&endDate=2024-03-31   
+
+   Returns (JSON):
 
         {
           "Transactions": [
