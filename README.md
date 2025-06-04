@@ -120,7 +120,7 @@
         2. The transaction list must have at least one valid transaction
 
 2. 🧮 Calculate Rewards
-        GET /api/rewards/calculateRewards/{customerId}?startDate=2024-05-01&endDate=2024-05-31   
+        GET /api/rewards/calculateRewards/{customerId}?startDate=2024-05-01&endDate=2024-08-31   
 
    Returns (JSON):
 
