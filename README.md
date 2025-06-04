@@ -66,19 +66,17 @@ A Spring Boot application that calculates customer reward points based on transa
 
 ## 📂 Project Structure
 
-Customer-Rewards-Application/
-├── controller/            → Handles API requests (e.g., RewardsController)
-├── dto/                   → Request/response models (CustomerDto, TransactionDto)
-├── model/                 → JPA entities (Customer, Transaction)
-├── repository/            → Data access layer (JpaRepository interfaces)
-├── service/               → Business logic (RewardsService)
-├── exception/ (optional)  → Custom exception handlers
-├── config/     (optional) → Configuration classes (if needed)
-├── test/                  → Unit tests using JUnit & Mockito
-├── application.properties → Application configuration (MySQL, JPA)
-├── log4j2.xml             → Logging configuration
-├── pom.xml                → Maven build file
-└── CustomerRewardsApplication.java → Main Spring Boot class
+controller/	 Contains REST API controllers (e.g., RewardsController.java)
+dto/	       Data Transfer Objects like CustomerDto, TransactionDto
+model/	     JPA Entity classes like Customer.java, Transaction.java
+repository/	 Interfaces extending JpaRepository for DB access
+service/	   Business logic (e.g., RewardsService, RewardsServiceImpl)
+exception/   (optional)	Custom exception handlers (e.g., GlobalExceptionHandler.java)
+test/	       Unit test classes (CustomerRewardApplicationTests.java)
+application.properties	Spring Boot configuration (DB, JPA, logging, etc.)
+log4j2.xml	 Logging configuration using Log4j2
+pom.xml	     Maven build and dependency configuration
+CustomerRewardsApplication.java	  Main Spring Boot application entry point
 
 
 
