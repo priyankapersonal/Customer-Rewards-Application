@@ -73,6 +73,7 @@
         │       │       ├── controller          # REST controllers (RewardsController)
         │       │       ├── dto                 # DTOs for Customer and Transaction
         │       │       ├── model               # JPA entities (Customer, Transaction)
+        │       │       ├── exception           # Custom exception handlers (if any) 
         │       │       ├── repository          # Spring Data JPA repositories
         │       │       ├── service             # Business logic layer
         │       │       └── CustomerRewardsApplication.java  # Main Spring Boot entry point
