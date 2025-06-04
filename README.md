@@ -87,7 +87,8 @@
         │               └── CustomerRewardApplicationTests.java  # JUnit + Mockito test cases
         │
         ├── pom.xml                             # Maven build file
-        └── README.md                           # Project documentation
+        │
+        README.md                               # Project documentation
 
 
 
