@@ -95,7 +95,6 @@ Request Body (JSON):
           {
         "customerName": "Merry",
         "transaction": [
-    
         {
           "amount": 120.0,
           "date": "2024-05-01"
@@ -116,14 +115,9 @@ Returns (JSON):
           
             {
               "amount": 120.0,
-              "date": "2025-01-30",
+              "date": "2024-05-01",
               "transactionId": 1
-            },
-            {
-              "amount": 70.0,
-              "date": "2025-01-30",
-              "transactionId": 2
-            }
+            }            
           ],
           "Customer Details": {
             "customerId": 1,
@@ -132,19 +126,14 @@ Returns (JSON):
             
               {
                 "amount": 120.0,
-                "date": "2025-01-30",
+                "date": "2024-05-01",
                 "transactionId": 1
-              },
-              {
-                "amount": 70.0,
-                "date": "2025-01-30",
-                "transactionId": 2
               }
             ]
           },
           "Rewards Breakdown": {
-            "JANUARY": 110,
-            "Total Rewards": 110
+            "JANUARY": 90,
+            "Total Rewards": 90
           }
         }
 
