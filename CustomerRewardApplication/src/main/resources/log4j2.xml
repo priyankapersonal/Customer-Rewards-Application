@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+    <Appenders>
+        <!-- Console shows everything -->
+        
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+
+        <!-- File appender filters out unwanted startup logs -->
+        
+      						 <!-- <File name="File" fileName="C:/Users/Priyanka/Desktop/logs/Rewards.log" append="true">-->
+        <File name="File" fileName="logs/CustomerRewardsLogFile.log" append="true">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n"/>
+            
+            <!-- Filter to deny specific packages -->
+            <Filters>
+                <Filter type="LoggerMatchFilter" logger="org.springframework" onMatch="DENY" onMismatch="NEUTRAL"/>
+                <Filter type="LoggerMatchFilter" logger="org.apache" onMatch="DENY" onMismatch="NEUTRAL"/>
+                <Filter type="LoggerMatchFilter" logger="org.hibernate" onMatch="DENY" onMismatch="NEUTRAL"/>
+                <Filter type="LoggerMatchFilter" logger="com.zaxxer.hikari" onMatch="DENY" onMismatch="NEUTRAL"/>
+                <Filter type="LoggerMatchFilter" logger="com.infy.CustomerRewardsApplication" onMatch="DENY" onMismatch="NEUTRAL"/>
+            </Filters>
+        </File>
+    </Appenders>
+
+    <Loggers>
+        <!-- Suppress startup logs from noisy packages -->
+        
+        <Logger name="org.springframework" level="info" additivity="false">
+            <AppenderRef ref="Console"/>
+        </Logger>
+
+        <Logger name="org.apache" level="info" additivity="false">
+            <AppenderRef ref="Console"/>
+        </Logger>
+        
+
+        <Logger name="org.hibernate" level="info" additivity="false">
+            <AppenderRef ref="Console"/>
+        </Logger>
+
+        <Logger name="com.zaxxer.hikari" level="info" additivity="false">
+            <AppenderRef ref="Console"/>
+        </Logger>
+        
+        <Logger name="com.infy.CustomerRewardsApplication" level="info" additivity="false">
+            <AppenderRef ref="Console"/>
+        </Logger>
+
+        <!-- Your application logs go to both file and console -->
+        <Root level="info">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="File"/>
+        </Root>
+    </Loggers>
+
+</Configuration>

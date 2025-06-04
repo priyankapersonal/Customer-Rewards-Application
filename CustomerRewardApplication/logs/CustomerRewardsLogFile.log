@@ -1,0 +1,16 @@
+2025-06-03 21:15:02 [http-nio-8089-exec-6] INFO  com.infy.controller.RewardsController - Saving Customer : John
+2025-06-03 21:15:02 [http-nio-8089-exec-6] INFO  com.infy.controller.RewardsController - Customer added successfully : [!!!com.infy.model.Customer@56c3cdb7=>java.lang.StackOverflowError:null!!!]
+2025-06-03 21:15:11 [http-nio-8089-exec-1] INFO  com.infy.controller.RewardsController - calculating rewards for customer ID: 3
+2025-06-03 21:15:11 [http-nio-8089-exec-1] INFO  com.infy.controller.RewardsController - Rewards calculation completed for customer ID: 3
+2025-06-03 21:15:11 [http-nio-8089-exec-1] INFO  com.infy.controller.RewardsController - Rewards calculated successfully for customer: 3
+2025-06-03 21:18:35 [http-nio-8089-exec-1] INFO  com.infy.controller.RewardsController - calculating rewards for customer ID: 3
+2025-06-03 21:18:35 [http-nio-8089-exec-1] INFO  com.infy.controller.RewardsController - Rewards calculation completed for customer ID: 3
+2025-06-03 21:18:35 [http-nio-8089-exec-1] INFO  com.infy.controller.RewardsController - Rewards calculated successfully for customer: 3
+2025-06-03 21:25:07 [http-nio-8089-exec-2] INFO  com.infy.controller.RewardsController - calculating rewards for customer ID: 322
+2025-06-03 21:25:07 [http-nio-8089-exec-2] WARN  com.infy.controller.RewardsController - No transactions found for customer ID: 322
+2025-06-03 21:43:53 [http-nio-8089-exec-10] INFO  com.infy.controller.RewardsController - calculating rewards for customer ID: 3
+2025-06-03 21:43:53 [http-nio-8089-exec-10] INFO  com.infy.controller.RewardsController - Rewards calculation completed for customer ID: 3
+2025-06-03 21:43:53 [http-nio-8089-exec-10] INFO  com.infy.controller.RewardsController - Rewards calculated successfully for customer: 3
+2025-06-03 21:44:09 [http-nio-8089-exec-8] INFO  com.infy.controller.RewardsController - calculating rewards for customer ID: 1
+2025-06-03 21:44:09 [http-nio-8089-exec-8] INFO  com.infy.controller.RewardsController - Rewards calculation completed for customer ID: 1
+2025-06-03 21:44:09 [http-nio-8089-exec-8] INFO  com.infy.controller.RewardsController - Rewards calculated successfully for customer: 1
