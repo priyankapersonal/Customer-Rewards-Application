@@ -66,40 +66,19 @@ A Spring Boot application that calculates customer reward points based on transa
 
 ## 📂 Project Structure
 
-Customer-Rewards-Application
-├── 📁 controller/            → Handles REST API endpoints
-│   └── RewardsController.java
-│
-├── 📁 dto/                  → Data Transfer Objects for API input/output
-│   ├── CustomerDto.java
-│   └── TransactionDto.java
-│
-├── 📁 model/                → JPA Entity classes representing DB tables
-│   ├── Customer.java
-│   └── Transaction.java
-│
-├── 📁 repository/           → Interfaces extending JpaRepository
-│   ├── CustomerRepository.java
-│   └── TransactionRepository.java
-│
-├── 📁 service/              → Business logic & reward point calculations
-│   ├── RewardsService.java
-│   └── RewardsServiceImpl.java (if using interface-impl separation)
-│
-├── 📁 exception/ (optional) → Custom exception handlers (if any)
-│   └── GlobalExceptionHandler.java
-│
-├── 📁 config/     (optional)→ Configuration classes (if needed later)
-│   └── AppConfig.java
-│
-├── CustomerRewardsApplication.java  → Main Spring Boot application class
-│
-├── 📁 test/                → Unit & integration tests
-│   └── CustomerRewardApplicationTests.java
-│
-├── application.properties → Application configuration
-├── log4j2.xml             → Logging configuration (if used)
-└── pom.xml                → Maven build configuration
+Customer-Rewards-Application/
+├── controller/            → Handles API requests (e.g., RewardsController)
+├── dto/                   → Request/response models (CustomerDto, TransactionDto)
+├── model/                 → JPA entities (Customer, Transaction)
+├── repository/            → Data access layer (JpaRepository interfaces)
+├── service/               → Business logic (RewardsService)
+├── exception/ (optional)  → Custom exception handlers
+├── config/     (optional) → Configuration classes (if needed)
+├── test/                  → Unit tests using JUnit & Mockito
+├── application.properties → Application configuration (MySQL, JPA)
+├── log4j2.xml             → Logging configuration
+├── pom.xml                → Maven build file
+└── CustomerRewardsApplication.java → Main Spring Boot class
 
 
 
