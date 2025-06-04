@@ -66,30 +66,29 @@
  📂 Project Structure
 
         Customer-Rewards-Application
-        ├── controller/               → REST Controllers
-        │   └── RewardsController.java
-        ├── dto/                     → API DTOs
-        │   ├── CustomerDto.java
-        │   └── TransactionDto.java
-        ├── model/                   → JPA Entities
-        │   ├── Customer.java
-        │   └── Transaction.java
-        ├── repository/              → Spring Data JPA Repositories
-        │   ├── CustomerRepository.java
-        │   └── TransactionRepository.java
-        ├── service/                 → Business Logic
-        │   ├── RewardsService.java
-        │   └── RewardsServiceImpl.java
-        ├── exception/ (optional)    → Exception Handling
-        │   └── GlobalExceptionHandler.java
-        ├── config/ (optional)       → Custom Configuration
-        │   └── AppConfig.java
-        ├── test/                    → Unit Tests
-        │   └── CustomerRewardApplicationTests.java
-        ├── CustomerRewardsApplication.java   → Main Spring Boot Class
-        ├── application.properties            → App Config
-        ├── log4j2.xml                        → Logging Config
-        └── pom.xml                           → Maven Config
+        ├── src
+        │   └── main
+        │       ├── java
+        │       │   └── com.infy
+        │       │       ├── controller          # REST controllers (RewardsController)
+        │       │       ├── dto                 # DTOs for Customer and Transaction
+        │       │       ├── model               # JPA entities (Customer, Transaction)
+        │       │       ├── repository          # Spring Data JPA repositories
+        │       │       ├── service             # Business logic layer
+        │       │       └── CustomerRewardsApplication.java  # Main Spring Boot entry point
+        │       └── resources
+        │           ├── application.properties  # DB config and app settings
+        │           └── log4j2.xml              # Log4j2 configuration (if present)
+        │
+        ├── src
+        │   └── test
+        │       └── java
+        │           └── com.infy
+        │               └── CustomerRewardApplicationTests.java  # JUnit + Mockito test cases
+        │
+        ├── pom.xml                             # Maven build file
+        └── README.md                           # Project documentation
+
 
 
 
