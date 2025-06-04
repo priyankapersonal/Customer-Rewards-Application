@@ -86,11 +86,12 @@ A Spring Boot application that calculates customer reward points based on transa
 ✅ Tests include:
 1. Positive & negative scenarios for the controller
 2. Manual validation tests for DTOs
+   
 
-🔗 API Endpoints
+🔗 API Endpoints:
 1. ➕ Add Customer
-POST /api/rewards/addCustomer
-Request Body (JSON):
+    POST /api/rewards/addCustomer
+    Request Body (JSON):
 
           {
         "customerName": "Merry",
@@ -107,8 +108,8 @@ Request Body (JSON):
         2. The transaction list must have at least one valid transaction
 
 2. 🧮 Calculate Rewards
-GET /api/rewards/calculateRewards/{customerId}?startDate=2024-01-01&endDate=2024-03-31
-Returns (JSON):
+    GET /api/rewards/calculateRewards/{customerId}?startDate=2024-01-01&endDate=2024-03-31
+    Returns (JSON):
 
         {
           "Transactions": [
@@ -138,22 +139,24 @@ Returns (JSON):
         }
 
 🎯 Reward Calculation Logic:
+
      1. $50–$100 → 1 point per dollar over $50      
      2. $100+ → 2 points per dollar over $100 + 1 point per dollar between $50–$100
 
 
 🚀 How to Run
-   1. Clone the Repo
-         git clone https://github.com/priyankapersonal/Customer-Rewards-Application.git
-   
-   2. Configure MySQL in application.properties  
-        spring.datasource.url=jdbc:mysql://localhost:3306/rewards_db
-        spring.datasource.username=root
-        spring.datasource.password=yourpassword
-        spring.jpa.hibernate.ddl-auto=update
-      
-  3. Run the App
-        mvn spring-boot: run
+
+     1. Clone the Repo
+           git clone https://github.com/priyankapersonal/Customer-Rewards-Application.git
+     
+     2. Configure MySQL in application.properties  
+          spring.datasource.url=jdbc:mysql://localhost:3306/rewards_db
+          spring.datasource.username=root
+          spring.datasource.password=yourpassword
+          spring.jpa.hibernate.ddl-auto=update
+        
+    3. Run the App
+          mvn spring-boot: run
      
 
 👩‍💼 Author
