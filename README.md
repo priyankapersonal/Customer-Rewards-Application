@@ -65,19 +65,32 @@
 
 ## 📂 Project Structure
 
-    | Component/Folder                  | Description                                                               |
-    | --------------------------------- | ------------------------------------------------------------------------- |
-    | `controller/`                     | REST API controllers (e.g., `RewardsController.java`)                     |
-    | `dto/`                            | Data Transfer Objects like `CustomerDto`, `TransactionDto`                |
-    | `model/`                          | JPA Entity classes like `Customer.java`, `Transaction.java`               |
-    | `repository/`                     | Interfaces extending `JpaRepository` for database access                  |
-    | `service/`                        | Business logic (e.g., `RewardsService`)             |
-    | `exception/` *(optional)*         | Custom exception handlers (e.g., `GlobalExceptionHandler.java`)           |
-    | `test/`                           | Unit and integration test classes (`CustomerRewardApplicationTests.java`) |
-    | `application.properties`          | Application-level configuration (DB, JPA, logging, etc.)                  |
-    | `log4j2.xml`                      | Logging configuration using Log4j2                                        |
-    | `pom.xml`                         | Maven build configuration and project dependencies                        |
-    | `CustomerRewardsApplication.java` | Main Spring Boot application entry point                                  |
+        Customer-Rewards-Application
+        ├── controller/               → REST Controllers
+        │   └── RewardsController.java
+        ├── dto/                     → API DTOs
+        │   ├── CustomerDto.java
+        │   └── TransactionDto.java
+        ├── model/                   → JPA Entities
+        │   ├── Customer.java
+        │   └── Transaction.java
+        ├── repository/              → Spring Data JPA Repositories
+        │   ├── CustomerRepository.java
+        │   └── TransactionRepository.java
+        ├── service/                 → Business Logic
+        │   ├── RewardsService.java
+        │   └── RewardsServiceImpl.java
+        ├── exception/ (optional)    → Exception Handling
+        │   └── GlobalExceptionHandler.java
+        ├── config/ (optional)       → Custom Configuration
+        │   └── AppConfig.java
+        ├── test/                    → Unit Tests
+        │   └── CustomerRewardApplicationTests.java
+        ├── CustomerRewardsApplication.java   → Main Spring Boot Class
+        ├── application.properties            → App Config
+        ├── log4j2.xml                        → Logging Config
+        └── pom.xml                           → Maven Config
+
 
 
 
