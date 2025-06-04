@@ -66,17 +66,20 @@ A Spring Boot application that calculates customer reward points based on transa
 
 ## 📂 Project Structure
 
-controller/	 Contains REST API controllers (e.g., RewardsController.java)
-dto/	       Data Transfer Objects like CustomerDto, TransactionDto
-model/	     JPA Entity classes like Customer.java, Transaction.java
-repository/	 Interfaces extending JpaRepository for DB access
-service/	   Business logic (e.g., RewardsService, RewardsServiceImpl)
-exception/   (optional)	Custom exception handlers (e.g., GlobalExceptionHandler.java)
-test/	       Unit test classes (CustomerRewardApplicationTests.java)
-application.properties	Spring Boot configuration (DB, JPA, logging, etc.)
-log4j2.xml	 Logging configuration using Log4j2
-pom.xml	     Maven build and dependency configuration
-CustomerRewardsApplication.java	  Main Spring Boot application entry point
+| Component/Folder                  | Description                                                               |
+| --------------------------------- | ------------------------------------------------------------------------- |
+| `controller/`                     | REST API controllers (e.g., `RewardsController.java`)                     |
+| `dto/`                            | Data Transfer Objects like `CustomerDto`, `TransactionDto`                |
+| `model/`                          | JPA Entity classes like `Customer.java`, `Transaction.java`               |
+| `repository/`                     | Interfaces extending `JpaRepository` for database access                  |
+| `service/`                        | Business logic (e.g., `RewardsService`)             |
+| `exception/` *(optional)*         | Custom exception handlers (e.g., `GlobalExceptionHandler.java`)           |
+| `test/`                           | Unit and integration test classes (`CustomerRewardApplicationTests.java`) |
+| `application.properties`          | Application-level configuration (DB, JPA, logging, etc.)                  |
+| `log4j2.xml`                      | Logging configuration using Log4j2                                        |
+| `pom.xml`                         | Maven build configuration and project dependencies                        |
+| `CustomerRewardsApplication.java` | Main Spring Boot application entry point                                  |
+
 
 
 
@@ -166,6 +169,5 @@ Returns (JSON):
 
 👩‍💼 Author
 Priyanka Patil
-Senior Associate Consultant
-Java | Spring Boot | JPA | REST APIs
+(Senior Associate Consultant)
 
