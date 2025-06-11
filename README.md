@@ -10,6 +10,22 @@
     - Integration tests for the controller and service layers
     - Logs application activity into the console and file (Logback)
 
+📖 API Documentation (Swagger/OpenAPI)
+
+    This project uses **Swagger** (OpenAPI) for interactive API documentation.
+    
+    - After starting the application, access the Swagger UI at:  
+      [http://localhost:8091/swagger-ui/index.html](http://localhost:8091/swagger-ui/index.html)
+    
+    - The OpenAPI specification is available at:  
+      [http://localhost:8091/v3/api-docs](http://localhost:8091/v3/api-docs)
+    
+    Use the Swagger UI to:
+    - Explore all available endpoints
+    - View request/response schemas
+    - Try out API calls directly from your browser
+    
+
 🧰 Tech Stack
 
     Java 17
