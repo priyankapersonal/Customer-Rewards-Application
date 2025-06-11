@@ -167,9 +167,9 @@ public class RewardsServiceImpl implements RewardsService {
 	private int calculatePoints(double amount) {
 		int points = 0;
 		if (amount > 100)
-			points += ((int) amount - 100) * 2;
+			points += (int) ((amount - 100) * 2);
 		if (amount > 50)
-			points += Math.min((int) amount, 100) - 50;
+			points += (int) Math.min(amount, 100) - 50;
 		return points;
 	}
 }
