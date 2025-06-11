@@ -1,5 +1,4 @@
 package com.infy.exception;
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 

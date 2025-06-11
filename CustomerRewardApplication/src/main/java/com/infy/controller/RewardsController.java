@@ -1,10 +1,8 @@
 package com.infy.controller;
-
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,13 +16,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-
 import com.infy.dto.CustomerDto;
 import com.infy.exception.InvalidRequestException;
 import com.infy.model.Customer;
 import com.infy.model.Transaction;
 import com.infy.service.RewardsService;
-
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.media.Content;
@@ -46,7 +42,7 @@ import jakarta.validation.Valid;
 public class RewardsController {
 
 	private static final Logger logger = LoggerFactory.getLogger(RewardsController.class);
-	
+
 	@Autowired
 	private RewardsService rewardsService;
 
@@ -66,8 +62,6 @@ public class RewardsController {
 	@PostMapping(consumes = "application/json", produces = "application/json")
 	public ResponseEntity<?> addCustomer(
 			@Valid @RequestBody @Parameter(description = "Customer data with transactions", required = true) CustomerDto customerDto) {
-		// No need to check for null, @Valid will handle it and return 400 if
-		// missing/invalid
 		Customer customer = new Customer();
 		customer.setCustomerName(customerDto.getCustomerName());
 
