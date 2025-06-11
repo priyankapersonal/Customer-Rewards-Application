@@ -1,0 +1,26 @@
+2025-06-11 07:44:49 [restartedMain] INFO  com.infy.CustomerRewardsApplication - Starting CustomerRewardsApplication using Java 17.0.12 with PID 27476 (C:\Users\Swati\Documents\workspace-spring-tools-for-eclipse-4.30.0.RELEASE\Customer-Rewards-Application-master\CustomerRewardApplication\target\classes started by Swati in C:\Users\Swati\Documents\workspace-spring-tools-for-eclipse-4.30.0.RELEASE\Customer-Rewards-Application-master\CustomerRewardApplication)
+2025-06-11 07:44:49 [restartedMain] DEBUG com.infy.CustomerRewardsApplication - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-11 07:44:49 [restartedMain] INFO  com.infy.CustomerRewardsApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-11 07:44:50 [restartedMain] INFO  com.infy.CustomerRewardsApplication - Started CustomerRewardsApplication in 0.599 seconds (process running for 1865.353)
+2025-06-11 07:45:34 [restartedMain] INFO  com.infy.CustomerRewardsApplication - Starting CustomerRewardsApplication using Java 17.0.12 with PID 17524 (C:\Users\Swati\Documents\workspace-spring-tools-for-eclipse-4.30.0.RELEASE\Customer-Rewards-Application-master\CustomerRewardApplication\target\classes started by Swati in C:\Users\Swati\Documents\workspace-spring-tools-for-eclipse-4.30.0.RELEASE\Customer-Rewards-Application-master\CustomerRewardApplication)
+2025-06-11 07:45:34 [restartedMain] DEBUG com.infy.CustomerRewardsApplication - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-11 07:45:34 [restartedMain] INFO  com.infy.CustomerRewardsApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-11 07:45:39 [restartedMain] INFO  com.infy.CustomerRewardsApplication - Started CustomerRewardsApplication in 6.266 seconds (process running for 7.454)
+2025-06-11 07:46:04 [restartedMain] INFO  com.infy.CustomerRewardsApplication - APPLICATION STARTED
+2025-06-11 07:46:04 [restartedMain] INFO  com.infy.CustomerRewardsApplication - Starting CustomerRewardsApplication using Java 17.0.12 with PID 17524 (C:\Users\Swati\Documents\workspace-spring-tools-for-eclipse-4.30.0.RELEASE\Customer-Rewards-Application-master\CustomerRewardApplication\target\classes started by Swati in C:\Users\Swati\Documents\workspace-spring-tools-for-eclipse-4.30.0.RELEASE\Customer-Rewards-Application-master\CustomerRewardApplication)
+2025-06-11 07:46:04 [restartedMain] DEBUG com.infy.CustomerRewardsApplication - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-11 07:46:04 [restartedMain] INFO  com.infy.CustomerRewardsApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-11 07:46:05 [restartedMain] INFO  com.infy.CustomerRewardsApplication - Started CustomerRewardsApplication in 0.681 seconds (process running for 32.666)
+2025-06-11 07:47:06 [http-nio-8091-exec-2] DEBUG c.infy.controller.RewardsController - Adding Customer : Customer{id=null, name=Merry}
+2025-06-11 07:47:06 [http-nio-8091-exec-2] INFO  com.infy.service.RewardsServiceImpl - Saving Customer: Merry
+2025-06-11 07:47:06 [http-nio-8091-exec-2] INFO  com.infy.service.RewardsServiceImpl - Customer saved successfully with ID: 1
+2025-06-11 07:47:06 [http-nio-8091-exec-2] INFO  c.infy.controller.RewardsController - Customer added successfully : Customer{id=1, name=Merry}
+2025-06-11 07:51:13 [http-nio-8091-exec-5] DEBUG c.infy.controller.RewardsController - Calculating rewards for customer : 1
+2025-06-11 07:51:13 [http-nio-8091-exec-5] INFO  com.infy.service.RewardsServiceImpl - Calculating rewards for customer ID: 1
+2025-06-11 07:51:13 [http-nio-8091-exec-5] INFO  com.infy.service.RewardsServiceImpl - Reward calculation completed for customer ID: 1
+2025-06-11 07:51:13 [http-nio-8091-exec-5] INFO  c.infy.controller.RewardsController - Rewards calculated successfully for customer: 1
+2025-06-11 07:52:38 [restartedMain] INFO  com.infy.CustomerRewardsApplication - APPLICATION STARTED
+2025-06-11 07:52:38 [restartedMain] INFO  com.infy.CustomerRewardsApplication - Starting CustomerRewardsApplication using Java 17.0.12 with PID 17524 (C:\Users\Swati\Documents\workspace-spring-tools-for-eclipse-4.30.0.RELEASE\Customer-Rewards-Application-master\CustomerRewardApplication\target\classes started by Swati in C:\Users\Swati\Documents\workspace-spring-tools-for-eclipse-4.30.0.RELEASE\Customer-Rewards-Application-master\CustomerRewardApplication)
+2025-06-11 07:52:38 [restartedMain] DEBUG com.infy.CustomerRewardsApplication - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-11 07:52:38 [restartedMain] INFO  com.infy.CustomerRewardsApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-11 07:52:38 [restartedMain] INFO  com.infy.CustomerRewardsApplication - Started CustomerRewardsApplication in 0.84 seconds (process running for 426.352)
